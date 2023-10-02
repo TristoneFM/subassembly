@@ -11,10 +11,10 @@ import ShiftButton from './ShiftButton'
 
 
 const columns = [
-  {
-    title: 'Prioridad',
-    dataIndex: 'prioridad',
-  },
+  // {
+  //   title: 'Prioridad',
+  //   dataIndex: 'prioridad',
+  // },
   {
     title: 'Numero SAP',
     dataIndex: 'sap',
@@ -77,7 +77,7 @@ const ProductionTable = () => {
         data.map((item) => {
 
           item.key = item.id
-          item.prioridad = item.priority
+          // item.prioridad = item.priority
           item.sap = item.no_sap
           item.stock = item.current_stock
           item.minstock = item.minimum_stock
