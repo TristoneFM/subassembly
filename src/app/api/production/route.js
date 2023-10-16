@@ -4,7 +4,7 @@ import { NextResponse } from "next/server"
 
 
 export async function GET() {
-    const data = await b10_bartender.query('SELECT * FROM sem WHERE current_stock < minimum_stock')
+    const data = await b10_bartender.query('SELECT * FROM sem WHERE CAST(current_stock AS INT) < CAST(minimum_stock AS INT)');
     return NextResponse.json({data})
 }
 
