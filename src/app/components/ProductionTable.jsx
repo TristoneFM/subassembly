@@ -21,6 +21,10 @@ const columns = [
     render: (text) => <a>{text}</a>,
   },
   {
+    title: 'Descripcion',
+    dataIndex: 'description',
+  },
+  {
     title: 'Stock Actual',
     dataIndex: 'stock',
   },
@@ -33,7 +37,7 @@ const columns = [
     dataIndex: 'produccion',
   },
   {
-    title: 'Station',
+    title: 'Estacion',
     dataIndex: 'station',
   },
   {
@@ -78,7 +82,8 @@ const ProductionTable = () => {
 
           item.key = item.id
           // item.prioridad = item.priority
-          item.sap = item.no_sap
+          item.sap = item.no_sap.substring(1)
+          item.description = item.assembly
           item.stock = item.current_stock
           item.minstock = item.minimum_stock
           item.produccion = parseInt(item.minimum_stock) - parseInt(item.current_stock)
