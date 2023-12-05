@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <main className={styles.main}>
         <Image src="/TristoneLogo.png" alt="" width={150} height={80} style={{marginBottom:'1%'}}/>
-        <Header/>
+        <Header text={'Producción Subensamble'} size={'30px'}/>
         <ProductionTable/>
     </main>
   )

@@ -23,6 +23,7 @@ const columns = [
   {
     title: 'Descripcion',
     dataIndex: 'description',
+   // render: (text) => <span style={{ fontSize: '1px' }}>{text}</span>,
   },
   {
     title: 'Stock Actual',

@@ -4,10 +4,10 @@ import { Typography } from 'antd';
 
 const { Text } = Typography;
 
-const Header = () => {
+const Header = ({text, size}) => {
   return (
     <>
-     <Text style={{marginBottom:'2%', fontSize:'30px'}}>Producción Subensamble</Text>
+     <Text style={{marginBottom:'2%', fontSize:size}}>{text}</Text>
     </>
   )
 }
